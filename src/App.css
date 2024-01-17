@@ -1,0 +1,73 @@
+body {
+  background-color: #E9E5E2;
+}
+
+@font-face {
+  font-family: "Lily Script One";
+  src: url("./fonts/LilyScriptOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Literata";
+  src: url("./fonts/Literata-VariableFont_opsz\,wght.ttf");
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+#title-bar {
+  text-align: right;
+}
+
+#title-bar button {
+  font-family: "Literata";
+  font-size: 20px;
+  color: #BD8585;
+  background-color: transparent;
+  border: 0;
+  margin: 15px;
+}
+
+#side-bar {
+  width: 15%;
+  background-color: #D9D9D9;
+}
+
+#side-bar-title {
+  font-family: "Lily Script One";
+  text-align: center;
+  font-size: auto;
+  color: #503737;
+}
+
+.main-area {
+  width: 85%;
+}
+
+.flex-area {
+  display: flex;
+  height: 100%;
+}
+
+.side-bar-ul {
+  height: 700px;
+  list-style-type: none;
+  padding-left: 10%;
+}
+
+.side-bar-ul li {
+  margin: 15px;
+  color: #BD8585;
+  font-size: 25px;
+  font-family: "Literata";
+}
