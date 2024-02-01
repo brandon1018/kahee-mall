@@ -5,7 +5,6 @@ function App() {
             <div>
                 당신은 길을 잃었습니다...
             </div>
-            <div></div>
         </div>
     )
 }

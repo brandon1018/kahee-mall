@@ -1,7 +1,18 @@
+import styles from '../styles/Login.module.css'
+
 function App() {
     return (
-        <div className="Login text-center">
-            <h1>Login Page</h1>
+        <div className="text-center">
+            <div id={styles.loginBox}>
+                <form className={styles.formContainer}>
+                    <input placeholder="ID" />
+                    <input placeholder="Password" />
+                    <button>Log-in</button>
+                </form>
+            </div>
+            <div>
+
+            </div>
         </div>
     )
 }

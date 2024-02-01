@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function App() {
 
     const title = "KaheeMall"
@@ -8,7 +10,9 @@ function App() {
 
     return (
         <div id="side-bar">
-            <h1 id="side-bar-title">{title}</h1>
+            <div id="side-bar-title">
+                <Link to='/'>{title}</Link>
+            </div>
             <div className="text-left">
                 <ul className="side-bar-ul">
                     {
