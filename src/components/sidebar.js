@@ -17,7 +17,12 @@ function App() {
                 <ul className="side-bar-ul">
                     {
                         categoryList.map((item, index) => {
-                            return <li key={item}>{item}</li>
+                            // return <li key={item} onClick={}>{item}</li>
+                            let itemRouter = "/item/" + item;
+                            
+                            return (
+                                <li><Link to={itemRouter} key={item}>{item}</Link></li>
+                            )
                         })
                     }
                 </ul>
