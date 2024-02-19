@@ -19,16 +19,8 @@ function App() {
                 <ul className="side-bar-ul">
                     {
                         categoryList.map((item, index) => {
-<<<<<<< HEAD
                             return (
                                 <li key={ item }><Link to='items' state={{ data: item }}>{item}</Link></li>
-=======
-                            // return <li key={item} onClick={}>{item}</li>
-                            let itemRouter = "/item/" + item;
-                            
-                            return (
-                                <li><Link to={itemRouter} key={item}>{item}</Link></li>
->>>>>>> 531504eb23dedd92ccbdfb78627b19cccaffd174
                             )
                         })
                     }
