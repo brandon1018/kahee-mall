@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #F2F2F2;
+  background-color: #FFFFFF;
 }
 
 @font-face {
@@ -14,6 +14,11 @@ body {
 @font-face {
   font-family: "Literata";
   src: url("./fonts/Literata-VariableFont_opsz\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("./fonts/Pretendard-Regular.ttf");
 }
 
 .text-center {
@@ -32,34 +37,46 @@ a {
   text-decoration: none;
 }
 
-input, button {
+input,
+button {
   border: none;
   background-color: transparent;
 }
 
 #title-bar {
-  text-align: right;
   min-width: 100rem;
+}
+
+#title-bar-header {
+  border: 1px solid black;
 }
 
 #title-bar button {
   font-family: "Literata";
   font-size: 2rem;
-  color: #BD8585;
   background-color: transparent;
   border: 0;
-  margin: 15px;
+  margin: 1.5rem;
 }
 
-#title-bar a {
-  color: #BD8585;
+#title-bar .title-left {
+  width: 70%;
+  text-align: left;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+#title-bar .title-right {
+  width: 30%;
+  text-align: right;
+  display: inline-block;
 }
 
 #side-bar {
   width: 15%;
   min-width: 25rem;
   height: 100vh;
-  background-color: #D9D9D9;
+  background-color: #FFFFFF;
 }
 
 #side-bar-title {
@@ -67,8 +84,8 @@ input, button {
   text-align: center;
   font-size: 4rem;
   color: #503737;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 #side-bar-title a {
@@ -84,15 +101,38 @@ input, button {
   height: 100%;
 }
 
+.side-bar-contents {
+  margin: 10px;
+  color: #7C7C7C;
+  font-size: 2.5rem;
+  font-family: "Literata";
+  padding: 0 10% 0 10%;
+  font-weight: 600;
+}
+
+.border-line {
+  border: 1px solid #B7B7B7;
+  width: 80%;
+  height: 0px;
+  margin: 20px auto;
+}
+
 .side-bar-ul {
   list-style-type: none;
   padding: 0 10% 0 10%;
 }
 
-.side-bar-ul li {
-  margin: 10px;
-  color: #BD8585;
+.side-bar-ul li{
+  margin: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.side-bar-ul li a {
+  color: #7C7C7C;
+  font-weight: 600;
   font-size: 2.5rem;
   font-family: "Literata";
 }
-
+.side-bar-ul li a:active {
+  color: black;
+}

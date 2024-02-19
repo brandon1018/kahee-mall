@@ -6,7 +6,7 @@ function App() {
     let categoryList = []
 
     //API 통신
-    categoryList = ['category1', 'category2', 'category3', 'category4']
+    categoryList = ['Clothes', 'Bags', 'Shoes', 'Accessories', 'Etc']
 
     return (
         <div id="side-bar">
@@ -14,13 +14,21 @@ function App() {
                 <Link to='/'>{title}</Link>
             </div>
             <div className="text-left">
+                <Link className="side-bar-contents"to='items'>All Contents</Link>
+                <div className="border-line"/>
                 <ul className="side-bar-ul">
                     {
                         categoryList.map((item, index) => {
-                            return <li key={item}>{item}</li>
+                            return (
+                                <li key={ item }><Link to='items' state={{ data: item }}>{item}</Link></li>
+                            )
                         })
                     }
                 </ul>
+                <Link className="side-bar-contents"to='inquiry'>Q&A</Link>
+                <div className="border-line"/>
+                <Link className="side-bar-contents"to='review'>Review</Link>
+                <div className="border-line"/>
             </div>
         </div>
     )

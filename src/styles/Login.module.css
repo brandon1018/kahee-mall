@@ -1,34 +1,62 @@
 #loginBox {
     margin: auto;
     margin-top: 20rem;
-    width: 45rem;
-    min-width: 40rem;
+    width: 130rem;
+    min-width: 130rem;
     height: 70rem;
-    border: solid 1px #E3DDD9;
+    border: solid 1px #D9D9D9;
     text-align: center;
-    background-color: #E9E5E2;
-    border-radius: 1rem;
-    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.10);
+    background-color: #F8F8F8;
+    border-radius: 3rem;
+}
+
+#loginTitle {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-size: 4rem;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
 }
 
 .formContainer {
-    margin-top: 50%;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.borderLine {
+    border: 1px solid #D9D9D9;
+    width: 90%;
+    height: 0px;
+    margin: 20px auto;
+    margin-top: 0px;
 }
 
 .formContainer input {
-    width: 60%;
-    margin: 2rem;
-    border-bottom: 2px #ADADAD solid;
+    width: 50%;
+    margin: 0.5rem;
+    height: 4.5rem;
     padding: 1rem;
     color: #999999;
     font-family: 'Literata';
+    font-size: 2rem;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
 }
 
-.formContainer button {
+#findAccount {
     width: 50%;
-    margin-top: 5rem;
-    font-family: 'Literata';
-    border-radius: 25px;
-    background-color: #D9D9D9;
-    height: 5rem;
+    align-items: right;
+}
+
+#findAccount a{
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #7C7C7C;
+}
+
+#findAccount button:last-child{
+    padding-right: 0;
 }

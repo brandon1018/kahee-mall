@@ -4,6 +4,7 @@ import './App.css';
 import Login from './pages/Login.js'
 import Main from './pages/Main.js'
 import NotFound from './pages/Notfound.js'
+import Items from './pages/Items'
 import TitleBar from './components/titlebar.js'
 import SideBar from './components/sidebar.js'
 
@@ -11,13 +12,14 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+        <TitleBar></TitleBar>
         <div className='flex-area'>
           <SideBar></SideBar>
           <div className='main-area'>
-            <TitleBar></TitleBar>
             <Routes>
               <Route path='/' element={<Main />}></Route>
               <Route path='/login' element={<Login />}></Route>
+              <Route path='/items' element={<Items />}></Route>
               <Route path='/*' element={<NotFound />}></Route>
             </Routes>
           </div>
