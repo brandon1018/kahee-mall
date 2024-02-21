@@ -13,8 +13,8 @@ function App() {
             </div>
 
             <div className="text-right">
-                <button><Link to={'/register'}>장바구니</Link></button>
-                <button><Link to={'/bagooni'}>마이페이지</Link></button>
+                <button><Link to={'/cart'}>장바구니</Link></button>
+                <button><Link to={'/mypage'}>마이페이지</Link></button>
             </div>
         </div>
     )

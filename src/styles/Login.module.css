@@ -1,24 +1,26 @@
 #loginBox {
     margin: auto;
     margin-top: 20rem;
+    margin-bottom: 20rem;
+    padding-bottom: 10rem;
     width: 130rem;
     min-width: 130rem;
-    height: 70rem;
+    min-height: 70rem;
     border: solid 1px #D9D9D9;
     text-align: center;
     background-color: #F8F8F8;
     border-radius: 3rem;
+    font-family: "Pretendard";
 }
 
 #loginTitle {
-    font-family: "Pretendard";
     font-weight: 700;
     font-size: 4rem;
     padding-top: 8rem;
     padding-bottom: 6rem;
 }
 
-.formContainer {
+.loginFormContainer {
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
@@ -33,13 +35,13 @@
     margin-top: 0px;
 }
 
-.formContainer input {
+.loginFormContainer input {
     width: 50%;
     margin: 0.5rem;
     height: 4.5rem;
     padding: 1rem;
     color: #999999;
-    font-family: 'Literata';
+    /* font-family: 'Literata'; */
     font-size: 2rem;
     background-color: #FFFFFF;
     border: 1px solid #D9D9D9;
@@ -50,13 +52,135 @@
     align-items: right;
 }
 
-#findAccount a{
+#findAccount a {
     padding: 2rem;
     font-size: 1.5rem;
     font-weight: 700;
     color: #7C7C7C;
 }
 
-#findAccount button:last-child{
+#findAccount button:last-child {
     padding-right: 0;
+}
+
+.registerFormContainer {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registerFormContainer div {
+    width: 70%;
+    /* height: 5.5rem; */
+    margin: 0.5rem;
+}
+
+#genderDiv {
+    display: inline-block;
+    width: 65%;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    height: 5rem;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+#genderDiv label {
+    margin-right: 15%;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.registerFormContainer div span {
+    display: inline-block;
+    width: 30%;
+    font-size: 2rem;
+    text-align: left;
+    height: 5rem;
+}
+
+.registerFormContainer div input[type="text"] {
+    width: 65%;
+    font-size: 2rem;
+    background-color: white;
+    height: 5rem;
+    border: solid 1px #D9D9D9;
+    padding-left: 2rem;
+}
+
+.genderRadio {
+    width: 20%;
+    background-color: white;
+    appearance: none;
+    border: 0.1rem solid #D9D9D9;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+}
+
+.genderRadio:checked {
+    width: 20%;
+    background-color: white;
+    appearance: none;
+    border: 0.5rem solid #8C61E3;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+
+}
+
+#terms {
+    margin-top: 5rem;
+    width: 100%;
+    padding-left: 15%;
+    text-align: left;
+}
+
+#terms span {
+    padding-left: 15%;
+    padding-left: 1.3rem;
+    font-size: 2rem;
+}
+
+#termsContent {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: white;
+    border: solid 1px #D9D9D9;
+    width: 66%;
+    height: 10rem;
+    font-size: 1.8rem;
+    resize: none;
+    overflow-y: auto;
+}
+
+#termsAgree {
+    padding-right: 30%;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+#terms input[type="checkbox"] {
+    background-color: white;
+    appearance: none;
+    border: 0.1rem solid #D9D9D9;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+}
+
+#terms input[type="checkbox"]:checked {
+    background-color: white;
+    appearance: none;
+    border: 0.5rem solid #8C61E3;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
 }
