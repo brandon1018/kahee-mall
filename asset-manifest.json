@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/kahee-mall/static/css/main.ceb2ce40.css",
-    "main.js": "/kahee-mall/static/js/main.21f86b27.js",
+    "main.js": "/kahee-mall/static/js/main.6f663275.js",
     "static/js/787.549af1a7.chunk.js": "/kahee-mall/static/js/787.549af1a7.chunk.js",
     "static/media/Pretendard-Regular.ttf": "/kahee-mall/static/media/Pretendard-Regular.fbe5b096111efa3e3bc2.ttf",
     "static/media/Literata-VariableFont_opsz,wght.ttf": "/kahee-mall/static/media/Literata-VariableFont_opsz,wght.e65e75df04f03038b940.ttf",
     "static/media/LilyScriptOne-Regular.ttf": "/kahee-mall/static/media/LilyScriptOne-Regular.0cc6fdfbc5921e8c747b.ttf",
     "index.html": "/kahee-mall/index.html",
     "main.ceb2ce40.css.map": "/kahee-mall/static/css/main.ceb2ce40.css.map",
-    "main.21f86b27.js.map": "/kahee-mall/static/js/main.21f86b27.js.map",
+    "main.6f663275.js.map": "/kahee-mall/static/js/main.6f663275.js.map",
     "787.549af1a7.chunk.js.map": "/kahee-mall/static/js/787.549af1a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ceb2ce40.css",
-    "static/js/main.21f86b27.js"
+    "static/js/main.6f663275.js"
   ]
 }
