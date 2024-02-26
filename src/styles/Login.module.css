@@ -180,21 +180,19 @@
 }
 
 #terms input[type="checkbox"] {
-    background-color: white;
-    appearance: none;
-    border: 0.1rem solid #D9D9D9;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.8rem;
     vertical-align: middle;
+    margin: 0 0 0 1rem;
+    border: 1px solid #D9D9D9;
 }
 
 #terms input[type="checkbox"]:checked {
-    background-color: white;
-    appearance: none;
-    border: 0.5rem solid #8C61E3;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    accent-color: #8C61E3;
     vertical-align: middle;
+    /* margin-left: 1rem; */
+    margin: 0 0 0 1rem;
+    border: 1px solid #D9D9D9;
 }

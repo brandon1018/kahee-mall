@@ -21,12 +21,12 @@ function App() {
                 <div id={styles.loginTitle}>회원가입</div>
                 <div className={styles.borderLine} />
                 <form className={styles.registerFormContainer}>
-                    <div><span>아이디*</span><input type="text" placeholder="아이디를 입력해주세요" /><button className={styles.floatButton}>중복확인</button></div>
-                    <div><span>비밀번호*</span><input type="password" placeholder="비밀번호를 입력해주세요" /></div>
-                    <div><span>비밀번호확인*</span><input type="password" placeholder="비밀번호를 한번 더 입력해주세요" /></div>
-                    <div><span>이름*</span><input type="text" placeholder="이름을 입력해주세요" /></div>
-                    <div><span>이메일*</span><input type="email" placeholder="ex: kaheemall@kahee.com" /><button className={styles.floatButton}>중복확인</button></div>
-                    <div><span>휴대폰*</span><input type="tel" placeholder="숫자만 입력해주세요" /><button className={styles.floatButton}>인증번호 받기</button></div>
+                    <div><span className='requiredField'>아이디</span><input type="text" placeholder="아이디를 입력해주세요" /><button className={styles.floatButton}>중복확인</button></div>
+                    <div><span className='requiredField'>비밀번호</span><input type="password" placeholder="비밀번호를 입력해주세요" /></div>
+                    <div><span className='requiredField'>비밀번호확인</span><input type="password" placeholder="비밀번호를 한번 더 입력해주세요" /></div>
+                    <div><span className='requiredField'>이름</span><input type="text" placeholder="이름을 입력해주세요" /></div>
+                    <div><span className='requiredField'>이메일</span><input type="email" placeholder="ex: kaheemall@kahee.com" /><button className={styles.floatButton}>중복확인</button></div>
+                    <div><span className='requiredField'>휴대폰</span><input type="tel" placeholder="숫자만 입력해주세요" /><button className={styles.floatButton}>인증번호 받기</button></div>
                     <div><span>생년월일</span><input type="date" placeholder="YYYY / MM / DD" /></div>
                     <div>
                         <span>성별</span>
