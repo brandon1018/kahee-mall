@@ -13,7 +13,7 @@ import SideBar from './components/sidebar.js'
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename='/kahee-mall'>
         <TitleBar></TitleBar>
         <div className='flex-area'>
           <SideBar></SideBar>

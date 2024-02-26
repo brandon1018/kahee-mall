@@ -1,5 +1,5 @@
-import { Link, useNavigate } from "react-router-dom";
 import styles from '../styles/Login.module.css';
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 function App() {
@@ -16,6 +16,11 @@ function App() {
         } else {
 
         }
+    }
+
+    function navigateToRegister() {
+        console.log('로그인 화면으로 이동');
+        navigate('/register')
     }
 
     return (
@@ -36,8 +41,8 @@ function App() {
                         <Link to='findUserInfo' state={{ type: 'id' }}>아이디 찾기</Link>|<Link to='findUserInfo' state={{ type: 'id' }}>비밀번호 찾기</Link>
                     </div>
                 </form>
-                <div>
-                    <Link to='/register'>회원가입</Link><button onClick={requestLogin}>로그인</button>
+                <div className={styles.loginButtonDiv}>
+                    <button onClick={navigateToRegister} className="whiteButton">회원가입</button><button onClick={requestLogin} className="purpleButton">로그인</button>
                 </div>
             </div>
             <div>

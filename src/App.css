@@ -122,7 +122,7 @@ button {
   padding: 0 10% 0 10%;
 }
 
-.side-bar-ul li{
+.side-bar-ul li {
   margin: 1rem;
   margin-bottom: 1.5rem;
 }
@@ -133,6 +133,32 @@ button {
   font-size: 2.5rem;
   font-family: "Literata";
 }
+
 .side-bar-ul li a:active {
   color: black;
+}
+
+.whiteButton {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: black;
+  font-weight: 600;
+  border: 0.5rem solid #343333;
+  border-radius: 4rem;
+  width: 20%;
+  height: 7rem;
+  font-size: 3rem;
+}
+
+.purpleButton {
+  display: inline-block;
+  color: white;
+  background-color: #8C61E3;
+  font-weight: 600;
+  border: 0.5rem solid #8C61E3;
+  border-radius: 4rem;
+  width: 20%;
+  height: 7rem;
+  font-size: 3rem;
+  margin-left: 2rem;
 }

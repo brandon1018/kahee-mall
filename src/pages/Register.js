@@ -1,19 +1,33 @@
-import styles from '../styles/Login.module.css'
+import { useNavigate } from 'react-router-dom';
+import styles from '../styles/Login.module.css';
 
 function App() {
+
+    const navigate = useNavigate();
+
+    function cancelRegister() {
+        navigate('/login')
+    };
+
+    function requestRegister() {
+
+    };
+
+
+
     return (
         <div className="text-center">
             <div id={styles.loginBox}>
                 <div id={styles.loginTitle}>회원가입</div>
                 <div className={styles.borderLine} />
                 <form className={styles.registerFormContainer}>
-                    <div><span>아이디*</span><input type="text" placeholder="아이디를 입력해주세요" /></div>
-                    <div><span>비밀번호*</span><input type="text" placeholder="비밀번호를 입력해주세요" /></div>
-                    <div><span>비밀번호확인*</span><input type="text" placeholder="비밀번호를 한번 더 입력해주세요" /></div>
+                    <div><span>아이디*</span><input type="text" placeholder="아이디를 입력해주세요" /><button className={styles.floatButton}>중복확인</button></div>
+                    <div><span>비밀번호*</span><input type="password" placeholder="비밀번호를 입력해주세요" /></div>
+                    <div><span>비밀번호확인*</span><input type="password" placeholder="비밀번호를 한번 더 입력해주세요" /></div>
                     <div><span>이름*</span><input type="text" placeholder="이름을 입력해주세요" /></div>
-                    <div><span>이메일*</span><input type="text" placeholder="ex: kaheemall@kahee.com" /></div>
-                    <div><span>휴대폰*</span><input type="text" placeholder="숫자만 입력해주세요" /></div>
-                    <div><span>생년월일</span><input type="text" placeholder="YYYY / MM / DD" /></div>
+                    <div><span>이메일*</span><input type="email" placeholder="ex: kaheemall@kahee.com" /><button className={styles.floatButton}>중복확인</button></div>
+                    <div><span>휴대폰*</span><input type="tel" placeholder="숫자만 입력해주세요" /><button className={styles.floatButton}>인증번호 받기</button></div>
+                    <div><span>생년월일</span><input type="date" placeholder="YYYY / MM / DD" /></div>
                     <div>
                         <span>성별</span>
                         <div id={styles.genderDiv}>
@@ -31,7 +45,9 @@ function App() {
                         <label>개인정보 처리방침 약관에 동의하시겠습니까?</label><input type="checkbox" />
                     </div>
                 </div>
-
+                <div className={styles.loginButtonDiv}>
+                    <button onClick={cancelRegister} className="whiteButton">취소</button><button onClick={requestRegister} className="purpleButton">회원가입</button>
+                </div>
             </div>
         </div>
     )
